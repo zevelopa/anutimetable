@@ -25,6 +25,13 @@ jobs:
         uses: actions/checkout@v2
       - name: setup python  
         uses: actions/setup-python@v2
+      - name: setup packages
+        uses: zevelopa/pip-action@2
+        with:
+          packages: |
+            requests
+            bs4
+            beautifulsoup 
         
       # Runs a single command using the runners shell
       - name: Run scraper
