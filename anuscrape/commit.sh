@@ -17,8 +17,8 @@ if [ $? -ne 0 ]; then
     echo New update found at `date` >> ./updatelog.txt
     mv -f ./timetable.json ../data/
     python3 ./update_date.py
-    #git add ../data/timetable.json ./updatelog.txt
-    #git add ../README.md ../js/timetable.js ../manifest.appcache
+    git add ../data/timetable.json 
+    git add ../js/timetable.js ../manifest.appcache
     git status
     read -p "Are you sure you want to push these changes" -n 1 -r
     echo
