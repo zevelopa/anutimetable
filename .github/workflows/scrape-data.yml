@@ -28,7 +28,7 @@ jobs:
         
       # Runs a single command using the runners shell
       - name: Run scraper
-        run: bash scrape_prepare.sh
+        run: bash commit.sh
         working-directory: ./anuscrape
       
       - name: Update date
