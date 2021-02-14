@@ -25,6 +25,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run scraper
-        run: commit.sh
-        working-directory: ./../anuscrape
+        run: ./../anuscrapecommit.sh
 
