@@ -26,6 +26,7 @@ if [ $? -ne 0 ]; then
     then
         # git commit -m "Updated on `date`"
         # git push
+        python3 update_date.py
         exit 0
     fi
     echo Aborting...
