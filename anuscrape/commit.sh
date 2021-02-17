@@ -24,8 +24,8 @@ if [ $? -ne 0 ]; then
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]
     then
-        git commit -m "Updated on `date`"
-        git push
+        # git commit -m "Updated on `date`"
+        # git push
         exit 0
     fi
     echo Aborting...
