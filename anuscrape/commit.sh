@@ -16,9 +16,9 @@ diff ./timetable.json ../data/timetable.json
 if [ $? -ne 0 ]; then
     echo New update found at `date` >> ./updatelog.txt
     mv -f ./timetable.json ../data/
-    python3 ./update_date.py
-    git add ../data/timetable.json 
-    git add ../js/timetable.js ../manifest.appcache
+    python3 update_date.py
+    #git add ../data/timetable.json 
+    #git add ../js/timetable.js ../manifest.appcache
     git status
     read -p "Are you sure you want to push these changes" -n 1 -r
     echo
@@ -26,6 +26,7 @@ if [ $? -ne 0 ]; then
     then
         # git commit -m "Updated on `date`"
         # git push
+        echo "Update date python script"
         python3 update_date.py
         exit 0
     fi
